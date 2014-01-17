@@ -1,0 +1,26 @@
+CHALLENGE 1
+
+Supplied code creates a class extension which allows to define tags on its instances.
+Since we want every object to has its own list of tags, we override initialize method,
+so it sets the instance variable for given object to default list of tags specified for the class.
+
+However something is nto working as expected - for some reason altering instance variable of one object
+alters it for all its siblings. 
+
+Find out why!
+
+Note: This might seem extremly complicated at start, however understanding this problem will give you a great insight
+into internal ruby mechanism.
+
+
+
+
+
+
+CHALLENGE 2
+
+This one should be much easier. We have rails application with just one controller with action 'custom'.
+Our current job was to install 'wicked' (https://github.com/schneems/wicked) gem and implement it on our controller.
+However as soon as you added line `include Wicked::Wizzard`, the custom action started to throw an exception.
+
+Localize the problem and find a solution.   
